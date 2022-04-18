@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+
+body{
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(to top, #051937, #47255a, #912562, #ce344b, #eb6a12);
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Nunito', sans-serif;
+}
+.content-wrapper {
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+h1 {
+    font-size: 2.5rem;
+    text-transform:capitalize;
+    font-weight: 900;
+    color: white;
+}
+.info p {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+    color: rgb(202, 201, 201);
+    letter-spacing: 1.2px;
+}
+input[type = 'text']{
+    width: auto;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1rem;
+}
+input:focus{
+    outline: none;
+}
+#Attempt, #error {
+    font-family: 'Manrope', sans-serif;
+    font-size: .8rem;
+    font-weight: 900;
+    color: red;
+    letter-spacing: 1.2px;
+}
+#won-msg {
+    color: #008000;
+    font-size: 1rem;
+    font-weight: 900;
+
+}
+#random-value-holder {
+    color: #ffffff;
+    font-family: 'Manrope', sans-serif;
+}
+#submit-btn, #reset {
+    color: black;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ce344b;
+}
+.button {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 20px; 
+}
+
+@media screen and (max-width: 480px) {
+    input{
+        width:auto;
+    }
+    h1{
+        font-size: 2rem;
+    }
+}
